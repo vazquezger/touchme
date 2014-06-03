@@ -1,0 +1,12 @@
+<ion-view title="Feed for user {{currentUserId}}">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="current in feed" type="item-text-wrap" href="#/tab/feed/{{current.id}}">
+        {{current.name}}
+        <h3 ng-hide="!current.match">
+        MATCH
+        </h3>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
